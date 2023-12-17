@@ -7,24 +7,44 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+      
     />
+    <link rel="stylesheet" href="estilos.css">
     <title>TP Final 2023</title>
   </head>
 
   <body> 
-    <div class="paper container">
-      <h1 style="text-align: center;">Trabajo Final - Tecno Multimedia 1</h1>
-      <p style="text-align: center;">Acá vas a poder ver un poco de proceso y resultados finales</p>
+
+
+    <div class="paper container" >
+
+
+      <div class="titulo" style="margin: 20% 0% 0%; ">
+        <h1 style="text-align: center;">Trabajo Final - Tecno Multimedia 1</h1>
+        <p style="text-align: center; ">Acá vas a poder ver un poco de proceso y resultados finales</p>
+      </div>
+      
+     
+   
+      <div class="botones" style="margin: 10% 35%;">
+        <a href="#equipo" class="paper-btn">Equipo</a>
+      <a href="#historia" class="paper-btn">Historia</a>
+      <a href="#juego" class="paper-btn"> Juego </a>
+      </div>
+      
+      
     
-      <div>
-        <h3>¿Quienes somos?</h3>
+      
+      
+      <div id="equipo" >
+        <h3 style="text-align: center; margin: 20% 0px 3%;" >¿Quienes somos?</h3>
       </div>
     
     
       <div class="row"> <!-- ACA agregar más cards si necesitare(en este caso no xd)-->
       
-        <div class="col-6 col">
-        <div class="card">
+        <div class="col-6 col" style="background-color: rgb(209, 183, 207);">
+        <div class="card" style="background-color: white;">
         <div class="card-body">
           <h4 class="card-title">Dana Urquiza</h4>
           <h5 class="card-subtitle">24 años</h5>
@@ -34,19 +54,19 @@
       </div>
     </div>
       
-    <div class="col-6 col">
-        <div class="card">
+    <div class="col-6 col" style="background-color: rgb(209, 183, 207);">
+        <div class="card" style="background-color: white;">
         <div class="card-body">
           <h4 class="card-title">Ines Rozankovic</h4>
           <h5 class="card-subtitle">19 años</h5>
-          <p class="card-text">Hello ine, please write a quick introduction about yourself here haha lol </p>
+          <p class="card-text">Fan de Harry Styles y Taylor Swift. Me encanta sacar fotos y esquiar. Palabra que más uso: slay </p>
           
         </div>
       </div>
     </div>
-</div> <!--Termina el row ACA (ESTO ES PARA LAS CARDS)-->
+</div><!--Termina el row ACA (ESTO ES PARA LAS CARDS)-->
 
-    <div>
+    <div id="historia">
         <h3>¿De qué trata nuestro Trabajo Final?</h3>
         <p>Este trabajo es una mezcla de el TP3 y TP5 de Tecno 1. Basado en una aventura gráfica del cuento clásico "La Ratita Presumida" y un minijuego con mecánicas de recolección.</p>
         <p>"La Ratita Presumida" tiene varias adaptaciones, la que tomamos como original para la aventura gráfica narra la historia de una ratita que, al encontrar una moneda decide comprarse un moño que la hace irresistible para otros hombres. Cada uno de ellos es rechazado, por razones egoistas y superficiales, incluido un raton muy bueno. Al final ella se deja llevar por las apariencias y el dinero y se deja seducir por un gato que se aprovecha de ella y trata de lastimarla. En el ultimo segundo el raton la escucha gritar y la salva, haciendo que ella se de cuenta y nos enseñe que lo importante no es lo superficial, si no como es uno por dentro y conocer a las personas antes de juzgar. </p>
@@ -56,21 +76,44 @@
         <div><img src="img/diagrama.png" alt="Diagrama de la historia"></div>
 
         <h4>Las imagenes utilizadas fueron originalmente sacadas de un video de Youtube. Te lo dejamos acá para que lo puedas ver</h4>
-        <div>
+        <div style="text-align: center; background-color:  rgb(209, 183, 207);">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/7tJ6uywPnQE?si=gnkO-_5jSqocT62h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
-        <h3>Pero, ¿para qué hablar mucho más? Probalo por tu cuenta acá</h3>
         <div>
-            <iframe src="tpfinalWeb/index.html" frameborder="0" width="800" height="610"></iframe>
+          <h3>¿Cómo nos organizamos para poder trabajar?</h3>
+          <p>Para codigo p5.js: La manera más fácil creemos que es: coordinar un horario y conectarnos simultaneamente por discord y compartirnos pantalla. Mientras una va escribiendo codigo, la otra puede ir viendo, corrigiendo si ve algo que la otra no vió. Es más facil resolver conflictos del codigo y recomendamos MUCHO trabajar en grupo si es posible, porque lo que una por ahi no sabe, la otra si y se entienden muchisimo mejor los temas al despejar las dudas en el momento. Para laburos más automaticos (como cargar texto, poner bonito todo, etc) el codigo se sube al GitHub y la que tenga tiempo y ganas se encarga de eso para el proximo encuentro por discord y nos ahorramos tiempo asi.</p>
+          <p>Para codigo HTML y CSS: Una se organizó en recopilar la info, *chamuyar los textos :p* y meter todo en HTML. Por otro lado, la otra se centro en poner todo bonito, arreglar textos mal escritos y que quede presentable para la entrega. </p>
+      </div>
+
+        <h3 id="juego">Pero, ¿para qué hablar mucho más? Probalo por tu cuenta acá</h3>
+        <div class="sm-9 col border-dotted border-thick" style="margin:  5% 10%;">
+            <iframe src="tpfinalWeb/index.html" frameborder="0" width="800" height="605"></iframe>
         </div>
     </div>
-
     <div>
-        <h3>¿Cómo nos organizamos para poder trabajar?</h3>
-        <p>Para codigo p5.js: La manera más fácil creemos que es: coordinar un horario y conectarnos simultaneamente por discord y compartirnos pantalla. Mientras una va escribiendo codigo, la otra puede ir viendo, corrigiendo si ve algo que la otra no vió. Es más facil resolver conflictos del codigo y recomendamos MUCHO trabajar en grupo si es posible, porque lo que una por ahi no sabe, la otra si y se entienden muchisimo mejor los temas al despejar las dudas en el momento. Para laburos más automaticos (como cargar texto, poner bonito todo, etc) el codigo se sube al GitHub y la que tenga tiempo y ganas se encarga de eso para el proximo encuentro por discord y nos ahorramos tiempo asi.</p>
-        <p>Para codigo HTML y CSS: Una se organizó en recopilar la info, *chamuyar los textos :p* y meter todo en HTML. Por otro lado, la otra se centro en poner todo bonito, arreglar textos mal escritos y que quede presentable para la entrega. </p>
+
+      <h3 style="text-align: center; font-style: italic; color: rgb(209, 183, 207); " >Gracias por leer hasta acá </h3>
+      
+        <div class="collapsible">
+          <input id="collapsible1" type="checkbox" name="collapsible">
+          <label for="collapsible1">Legajo Dana</label>
+          <div class="collapsible-body" style="text-align: center;">
+            <span >81867/3</span>
+          </div>
+
+        </div>
+        <div class="collapsible">
+          <input id="collapsible2" type="checkbox" name="collapsible">
+          <label for="collapsible2">Legajo Inés </label>
+          <div class="collapsible-body" style="text-align: center;">
+            <span >91470/0</span>
+          </div>
+        </div>
+      
     </div>
+
+    
     
 
       
